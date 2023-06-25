@@ -14,7 +14,7 @@ begin
 loop do
   page = mechanize.get("https://www.amazon.co.uk/s?k=raspberry+pi&page=#{pagenum}")
   rescue Mechanize::ResponseCodeError => e
-    p e.message
+    puts "Error occurred when trying to scrape: #{e.message}"
     sleep(20)
   else 
 
@@ -45,7 +45,7 @@ loop do
   sleep(20)
 end
 
-p 'Creating CSV file...'
+puts 'Creating CSV file...'
   
   CSV.open('results.csv', 'wb') do |csv|
     array.each do |row|
@@ -53,5 +53,5 @@ p 'Creating CSV file...'
     end
   end
 
-p 'Parsing finished! You can see the results in results.csv.'
+puts 'Parsing finished! You can see the results in results.csv.'
 end
