@@ -35,4 +35,5 @@ else
     array.push(product)
   end
   write_to_db(array)
+  write_to_csv(array)
 end
