@@ -14,14 +14,6 @@ task :cron do
   ruby 'lib/main.rb --cron'
 end
 
-task :check do
-  rubocop(-a)
-end
-
-task :fmt do
-  rufo 'lib'
-end
-
 task :test do
   ruby 'lib/test.rb'
 end
