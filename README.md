@@ -17,6 +17,14 @@ Simply run the following to get started:
   rake
 ```
 
+You can run the following to output to SQLite:
+
+```sh
+  rake sql
+```
+
+You can test that the scraper works by using `rake test`.
+
 ### Dependencies
 
 - mechanize: The whole point of this program (getting some web scraped results).
@@ -28,3 +36,5 @@ Simply run the following to get started:
 - rake: It's Makefile, for Ruby.
 
 - rubocop: Ruby linting.
+
+- sqlite3: Allow the scraper to output to sqlite.

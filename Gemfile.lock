@@ -57,6 +57,7 @@ GEM
     ruby-progressbar (1.13.0)
     rubyntlm (0.6.3)
     rufo (0.16.1)
+    sqlite3 (1.6.3-x86_64-linux)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -73,6 +74,7 @@ DEPENDENCIES
   rake
   rubocop
   rufo
+  sqlite3
 
 BUNDLED WITH
    2.3.5

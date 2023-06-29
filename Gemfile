@@ -7,3 +7,4 @@ gem 'mechanize'
 gem 'rake'
 gem 'rubocop', require: false
 gem 'rufo'
+gem 'sqlite3'
